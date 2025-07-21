@@ -97,7 +97,14 @@ function Apertura() {
         </p>
       </div>
 
-      <div className="icono-apertura">
+      <div
+        className="icono-apertura"
+        onClick={() =>
+          document
+            .getElementById("seccion-bambalinas")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
+      >
         <i className="bi bi-chevron-down"></i>
       </div>
     </header>

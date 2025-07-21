@@ -1,0 +1,133 @@
+.tras-bambalinas {
+  position: relative;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+  background: radial-gradient(circle, #141414 0%, #0c0707 20%, #000000 100%);
+  overflow: hidden;
+}
+
+/* TRAS BAMBALINAS - CAPA TRASERA*/
+.bg-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 17vw;
+  color: rgba(255, 255, 255, 0.06);
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  z-index: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Quienes somos titulo*/
+.content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Ocaso titulo*/
+.ocaso {
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Texto quienes somos */
+.intro {
+  font-size: 0.9rem;
+  margin-top: 2.3rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-inline: auto;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6; /* Interlineado */
+}
+
+/* Tarjetas */
+.tarjetas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tarjeta {
+  flex: 1 1 30%;
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.tarjeta.activa {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Tarjeta titulo*/
+.tarjeta h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Tarjeta parrafo*/
+.tarjeta p {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+}
+
+.timeline {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.punto {
+  background: none;
+  border: none;
+  color: gray;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 1;
+}
+
+.punto.activo {
+  color: white;
+}
+
+.punto span {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: white;
+}
+
+/* Línea horizontal detrás de los puntos */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 94%;
+  left: 50;
+  height: 2px;
+  width: 50%;
+  background-color: gray;
+  z-index: 0;
+  transform: translateY(-50%);
+}
