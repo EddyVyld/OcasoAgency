@@ -3,6 +3,7 @@ import "./trasBambalinas.css";
 import { MdLocalMovies } from "react-icons/md"; // Misión
 import { FaVideo } from "react-icons/fa"; // Visión
 import { GiClapperboard } from "react-icons/gi"; // Valores
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Flechas laterales
 
 const TrasBambalinas = () => {
   const [active, setActive] = useState("vision");
@@ -28,6 +29,16 @@ const TrasBambalinas = () => {
     },
   };
 
+  const claves = Object.keys(contenido);
+  const currentIndex = claves.indexOf(active);
+
+  const cambiarPunto = (direccion) => {
+    const nuevoIndex = currentIndex + direccion;
+    if (nuevoIndex >= 0 && nuevoIndex < claves.length) {
+      setActive(claves[nuevoIndex]);
+    }
+  };
+
   return (
     <section id="seccion-bambalinas" className="tras-bambalinas">
       <div className="bg-text">TRAS BAMBALI NAS</div>
@@ -43,29 +54,50 @@ const TrasBambalinas = () => {
         </p>
 
         <div className="tarjetas">
-          {Object.entries(contenido).map(([clave, info]) => (
-            <div
-              key={clave}
-              className={`tarjeta ${active === clave ? "activa" : ""}`}
-              onClick={() => setActive(clave)}
-            >
-              {info.icon}
-              <h3>{info.titulo}</h3>
-              <p>{info.texto}</p>
-            </div>
-          ))}
+          {claves.map((clave) => {
+            const info = contenido[clave];
+            return (
+              <div
+                key={clave}
+                className={`tarjeta ${active === clave ? "activa" : ""}`}
+                onClick={() => setActive(clave)}
+              >
+                {info.icon}
+                <h3>{info.titulo}</h3>
+                <p>{info.texto}</p>
+              </div>
+            );
+          })}
         </div>
 
-        <div className="timeline">
-          {Object.keys(contenido).map((clave, i) => (
-            <button
-              key={clave}
-              className={`punto ${active === clave ? "activo" : ""}`}
-              onClick={() => setActive(clave)}
-            >
-              ●<span>{["Misión", "Visión", "Valores"][i]}</span>
-            </button>
-          ))}
+        <div className="timeline-navegacion">
+          <button
+            className="flecha"
+            onClick={() => cambiarPunto(-1)}
+            disabled={currentIndex === 0}
+          >
+            <FaChevronLeft />
+          </button>
+
+          <div className="timeline">
+            {claves.map((clave, i) => (
+              <button
+                key={clave}
+                className={`punto ${active === clave ? "activo" : ""}`}
+                onClick={() => setActive(clave)}
+              >
+                ●<span>{contenido[clave].titulo}</span>
+              </button>
+            ))}
+          </div>
+
+          <button
+            className="flecha"
+            onClick={() => cambiarPunto(1)}
+            disabled={currentIndex === claves.length - 1}
+          >
+            <FaChevronRight />
+          </button>
         </div>
       </div>
     </section>

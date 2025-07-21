@@ -228,6 +228,9 @@ nav {
   .nav a::after {
     display: none;
   }
+
+  .bi {
+  }
 }
 
 /* ----- Para pantallas menores a 480px ----- */
@@ -261,4 +264,12 @@ footer {
   padding: 30px 20px;
   text-align: center;
   background-color: #111;
+}
+
+.bi {
+  color: gray;
+}
+
+.bi:hover {
+  color: white;
 }
