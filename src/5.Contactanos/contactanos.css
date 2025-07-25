@@ -12,6 +12,9 @@
 .contact-overlay {
   background-color: rgba(0, 0, 0, 0.6); /* Para oscurecer el fondo */
   padding: 4rem 2rem;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .contact-content {
@@ -129,10 +132,14 @@ button[type="submit"]:hover {
 
   .contact-left,
   .contact-form {
-    width: 100%;
+    width: 90%;
   }
 
   .contact-form {
     gap: 1rem;
+  }
+
+  .contact-overlay {
+    width: 110%;
   }
 }
