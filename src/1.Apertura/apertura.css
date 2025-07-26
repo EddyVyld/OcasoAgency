@@ -86,7 +86,7 @@ h3 {
 /* ----- Ícono de flecha animado ----- */
 .icono-apertura {
   position: absolute;
-  bottom: 100px;
+  bottom: 10vh; /* Se ajusta automáticamente al 10% de la altura de la pantalla */
   left: 50%;
   transform: translateX(-50%);
   font-size: 2.5rem;
@@ -181,11 +181,11 @@ nav {
 /* ----- Para pantallas menores a 768px ----- */
 @media (max-width: 768px) {
   .apertura {
-    padding: 20px;
+    padding: 30px;
   }
 
   .apertura-text h1 {
-    font-size: 1.8em;
+    font-size: 2.3em;
   }
 
   .menu-toggle {
@@ -229,18 +229,19 @@ nav {
     display: none;
   }
 
-  .bi {
+  .apertura-text p {
+    font-size: 1.3em;
   }
 }
 
 /* ----- Para pantallas menores a 480px ----- */
 @media (max-width: 480px) {
   .apertura-text h1 {
-    font-size: 1.5em;
+    font-size: 2.3em;
   }
 
   .apertura-text p {
-    font-size: 0.9em;
+    font-size: 1.3em;
   }
 
   .nav {
@@ -248,7 +249,7 @@ nav {
   }
 
   .icono-apertura {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -266,10 +267,11 @@ footer {
   background-color: #111;
 }
 
-.bi {
+.apertura .bi {
   color: gray;
+  font-size: 35px;
 }
 
-.bi:hover {
+.apertura .bi:hover {
   color: white;
 }

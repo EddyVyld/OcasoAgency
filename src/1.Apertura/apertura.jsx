@@ -47,7 +47,7 @@ function Apertura() {
   };
 
   return (
-    <header className="apertura">
+    <header id="seccion-apertura" className="apertura">
       <div className="overlay"></div>
       <nav>
         <div
@@ -62,27 +62,27 @@ function Apertura() {
         </div>
         <ul className={`nav ${menuActive ? "active" : ""}`} ref={navRef}>
           <li>
-            <a href="#" onClick={handleLinkClick}>
+            <a href="#seccion-apertura" onClick={handleLinkClick}>
               Apertura
             </a>
           </li>
           <li>
-            <a href="#" onClick={handleLinkClick}>
+            <a href="#seccion-bambalinas" onClick={handleLinkClick}>
               Tras Bambalinas
             </a>
           </li>
           <li>
-            <a href="#" onClick={handleLinkClick}>
+            <a href="#seccion-estudioProduccion" onClick={handleLinkClick}>
               Estudio de Producción
             </a>
           </li>
           <li>
-            <a href="#" onClick={handleLinkClick}>
+            <a href="#seccion-cartelera" onClick={handleLinkClick}>
               Cartelera
             </a>
           </li>
           <li>
-            <a href="#" onClick={handleLinkClick}>
+            <a href="#seccion-contactanos" onClick={handleLinkClick}>
               Contáctanos
             </a>
           </li>

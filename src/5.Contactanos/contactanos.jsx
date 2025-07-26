@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Contactanos() {
   return (
-    <section id="contacto" className="contact-container">
+    <section id="seccion-contactanos" className="contact-container">
       <div className="contact-overlay">
         <div className="contact-content">
           {/* Izquierda */}
