@@ -8,7 +8,7 @@ export default function Contactanos() {
         <div className="contact-content">
           {/* Izquierda */}
           <div className="contact-left">
-            <h2>Contáctanos</h2>
+            <h2>Contáctanossssssss</h2>
             <h3>¿Tu historia merece la gran pantalla?</h3>
             <p>
               Si tienes una película, un proyecto o una idea que necesita
