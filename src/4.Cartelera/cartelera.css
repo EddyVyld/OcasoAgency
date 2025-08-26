@@ -48,7 +48,7 @@
 /* Contenedor principal de películas */
 .peliculas-contenedor {
   width: 100%;
-  max-width: 100%;
+  max-width: auto;
   padding: 0 20px;
   box-sizing: border-box;
   display: flex;
@@ -126,7 +126,7 @@
   left: 0;
   width: 60px;
   height: 2px;
-  background: #e50914;
+  background: #d4af37; /* Color dorado */
 }
 
 /* Sinopsis (aparece con hover) */
