@@ -4,17 +4,18 @@
   padding: 100px 20px;
   background-color: #000;
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   position: relative;
+  margin-bottom: 0%;
 }
 
 .clientes-header {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .clientes-header h2 {
-  font-size: 3.5rem;
+  font-size: 38px;
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 15px;
@@ -25,8 +26,8 @@
 .eslogan {
   font-size: 1.5rem;
   color: #aaa;
-  font-style: italic;
   letter-spacing: 1px;
+  font-size: 18px;
 }
 
 /* Contenedor del carrusel */
@@ -43,7 +44,7 @@
 .slide-container {
   position: relative;
   width: 800px;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -68,7 +69,7 @@
 /* Contenedor de imagen fijo */
 .image-wrapper {
   width: 600px;
-  height: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +123,7 @@
 .indicadores {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
   margin-top: 40px;
 }
 
@@ -152,12 +153,12 @@
     width: 700px;
     height: 350px;
   }
-  
+
   .image-wrapper {
     width: 500px;
     height: 250px;
   }
-  
+
   .carrusel-btn {
     width: 60px;
     height: 60px;
@@ -169,21 +170,21 @@
   .clientes-section {
     padding: 80px 20px;
   }
-  
+
   .clientes-header h2 {
     font-size: 3rem;
   }
-  
+
   .slide-container {
     width: 600px;
     height: 300px;
   }
-  
+
   .image-wrapper {
     width: 450px;
     height: 225px;
   }
-  
+
   .carrusel-btn {
     width: 55px;
     height: 55px;
@@ -193,29 +194,29 @@
 
 @media (max-width: 768px) {
   .clientes-header h2 {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
-  
+
   .eslogan {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
-  
+
   .slide-container {
     width: 500px;
     height: 250px;
   }
-  
+
   .image-wrapper {
     width: 400px;
     height: 200px;
   }
-  
+
   .carrusel-btn {
     width: 50px;
     height: 50px;
     font-size: 1.8rem;
   }
-  
+
   .indicador {
     width: 14px;
     height: 14px;
@@ -226,37 +227,37 @@
   .clientes-section {
     padding: 60px 15px;
   }
-  
+
   .clientes-header h2 {
     font-size: 2rem;
     letter-spacing: 3px;
   }
-  
+
   .eslogan {
     font-size: 1.1rem;
   }
-  
+
   .slide-container {
     width: 100%;
     height: 200px;
     padding: 0 20px;
   }
-  
+
   .image-wrapper {
     width: 100%;
     height: 180px;
   }
-  
+
   .carrusel-btn {
     width: 45px;
     height: 45px;
     font-size: 1.6rem;
   }
-  
+
   .prev {
     left: 2%;
   }
-  
+
   .next {
     right: 2%;
   }

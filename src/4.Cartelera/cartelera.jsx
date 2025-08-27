@@ -14,10 +14,14 @@ import ultimaLuz from "./FilmsCartelera/UltimaLuzRodaje.jpg";
 
 export default function Cartelera() {
   return (
-    <div className="cartelera-container">
+    <div id="seccion-cartelera" className="cartelera-container">
       {/* Título con imagen de fondo */}
       <div className="titulo-contenedor">
-        <img src={fondoCartelera} alt="Fondo Cartelera" className="imagen-fondo" />
+        <img
+          src={fondoCartelera}
+          alt="Fondo Cartelera"
+          className="imagen-fondo"
+        />
         <div className="titulo-centrado">
           <h1>CARTELERA</h1>
         </div>
@@ -32,7 +36,12 @@ export default function Cartelera() {
             <h2>PROYECTOR ETERNO</h2>
           </div>
           <div className="pelicula-sinopsis">
-            <p>En un futuro cercano donde el cine ha sido prohibido, un grupo de adolescentes encuentra una vieja sala de proyección. Con cada película que ven, descubren secretos del pasado que podrían cambiar el destino del país.</p>
+            <p>
+              En un futuro cercano donde el cine ha sido prohibido, un grupo de
+              adolescentes encuentra una vieja sala de proyección. Con cada
+              película que ven, descubren secretos del pasado que podrían
+              cambiar el destino del país.
+            </p>
           </div>
         </div>
 
@@ -46,7 +55,11 @@ export default function Cartelera() {
             <h2>FLOR DE CAMPO</h2>
           </div>
           <div className="pelicula-sinopsis">
-            <p>Una mujer regresa a su pueblo natal tras la muerte de su madre. En su jardín, las flores que crecen esconden fragmentos de una historia familiar que fue enterrada por generaciones.</p>
+            <p>
+              Una mujer regresa a su pueblo natal tras la muerte de su madre. En
+              su jardín, las flores que crecen esconden fragmentos de una
+              historia familiar que fue enterrada por generaciones.
+            </p>
           </div>
         </div>
 
@@ -61,7 +74,12 @@ export default function Cartelera() {
               <h2>LENGUA DE FUEGO</h2>
             </div>
             <div className="pelicula-sinopsis">
-              <p>Una historia sobre deseo, lenguaje y censura.Tras una ruptura, una escritora comienza a escribir un libro que narra su historia de amor... pero lo que escribe empieza a suceder en la vida real, obligándola a enfrentar el final que no quiere admitir.</p>
+              <p>
+                Una historia sobre deseo, lenguaje y censura.Tras una ruptura,
+                una escritora comienza a escribir un libro que narra su historia
+                de amor... pero lo que escribe empieza a suceder en la vida
+                real, obligándola a enfrentar el final que no quiere admitir.
+              </p>
             </div>
           </div>
 
@@ -74,7 +92,12 @@ export default function Cartelera() {
               <h2>LA FOTOGRAFÍA PERDIDA</h2>
             </div>
             <div className="pelicula-sinopsis">
-              <p>Thriller psicológico sobre un fotógrafo que pierde la memoria. Realizamos un teaser que se revela a medida que el espectador interactúa, y un sitio web con efectos de glitch.Una campaña que desdibuja los límites entre recuerdo y ficción.</p>
+              <p>
+                Thriller psicológico sobre un fotógrafo que pierde la memoria.
+                Realizamos un teaser que se revela a medida que el espectador
+                interactúa, y un sitio web con efectos de glitch.Una campaña que
+                desdibuja los límites entre recuerdo y ficción.
+              </p>
             </div>
           </div>
         </div>
@@ -89,7 +112,11 @@ export default function Cartelera() {
             <h2>ÚLTIMA FUNCIÓN</h2>
           </div>
           <div className="pelicula-sinopsis">
-            <p>Un grupo de amigos se queda atrapado en un cine después de una función de medianoche. Pronto descubren que cada sala muestra escenas de su pasado que no recuerdan haber vivido.</p>
+            <p>
+              Un grupo de amigos se queda atrapado en un cine después de una
+              función de medianoche. Pronto descubren que cada sala muestra
+              escenas de su pasado que no recuerdan haber vivido.
+            </p>
           </div>
         </div>
 
@@ -101,7 +128,11 @@ export default function Cartelera() {
               <h2>VERDE PASTEL</h2>
             </div>
             <div className="pelicula-sinopsis">
-              <p>En una ciudad donde el color es controlado por el gobierno, una joven empieza a ver el mundo en tonos diferentes. Su cabello es solo el primer síntoma de una revolución sensorial.</p>
+              <p>
+                En una ciudad donde el color es controlado por el gobierno, una
+                joven empieza a ver el mundo en tonos diferentes. Su cabello es
+                solo el primer síntoma de una revolución sensorial.
+              </p>
             </div>
           </div>
 
@@ -111,7 +142,11 @@ export default function Cartelera() {
               <h2>LENTES CARMESÍ</h2>
             </div>
             <div className="pelicula-sinopsis">
-              <p>Cada vez que se pone los lentes que su abuela le dejó, Luisa puede ver las decisiones que no tomó. Pero el poder de mirar el “hubiera” comienza a consumir su presente.</p>
+              <p>
+                Cada vez que se pone los lentes que su abuela le dejó, Luisa
+                puede ver las decisiones que no tomó. Pero el poder de mirar el
+                “hubiera” comienza a consumir su presente.
+              </p>
             </div>
           </div>
         </div>
@@ -123,7 +158,11 @@ export default function Cartelera() {
             <h2>LA ÚLTIMA LUZ DE RODAJE</h2>
           </div>
           <div className="pelicula-sinopsis">
-            <p>Un joven cineasta se obsesiona con terminar la última película inconclusa de su maestro. Al proyectarla por primera vez, las escenas comienzan a reflejar momentos que aún no han ocurrido.</p>
+            <p>
+              Un joven cineasta se obsesiona con terminar la última película
+              inconclusa de su maestro. Al proyectarla por primera vez, las
+              escenas comienzan a reflejar momentos que aún no han ocurrido.
+            </p>
           </div>
         </div>
       </div>
