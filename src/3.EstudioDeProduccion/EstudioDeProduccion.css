@@ -4,6 +4,13 @@
   color: white;
 }
 
+section {
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
+  /* Los otros paddings se mantienen con sus valores originales */
+  padding-top: 50px; /* Mantén el valor que ya tenías */
+}
+
 /* Sección principal (Estudio de Producción) */
 .seccion-principal {
   position: relative;
@@ -42,18 +49,17 @@
 }
 
 .titulo-eslogan h1 {
-  font-size: 3rem;
+  font-size: 38px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+
   margin-bottom: 15px;
   font-weight: bold;
   color: #fff;
 }
 
 .titulo-eslogan .eslogan {
-  font-size: 1.5rem;
+  font-size: 16px;
   color: #ddd;
-  font-style: italic;
 }
 
 /* Carrusel de servicios - Tarjetas más pequeñas */
@@ -72,7 +78,7 @@
 }
 
 .carrusel {
-  width: 70%;
+  width: 100%;
   overflow: hidden;
   margin: 0 15px;
 }
@@ -192,8 +198,22 @@
   justify-content: center;
   width: auto;
   height: auto;
-  filter: grayscale(100%); /* Convierte a blanco y negro */
-  -webkit-filter: grayscale(100%); /* Para compatibilidad con Safari */
+  z-index: 0;
+}
+
+.seccion-secundaria::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit; /* Hereda la misma imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%); /* Blanco y negro SOLO para el fondo */
+  -webkit-filter: grayscale(100%);
+  z-index: -2; /* Detrás de todo */
 }
 
 .seccion-secundaria .overlay-bn {
@@ -203,7 +223,7 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  z-index: -1; /* Entre el fondo y el contenido */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,13 +233,13 @@
   position: relative;
   z-index: 2;
   max-width: 2000px;
-  margin: auto;
+  margin: 5rem;
   text-align: left;
-  padding-bottom: 60px; /* más aire dentro de la sección */
+  padding-bottom: 20px; /* más aire dentro de la sección */
 }
 
 .contenido-secundario h2 {
-  font-size: 2.8rem;
+  font-size: 38px;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 10px;
@@ -229,7 +249,7 @@
 
 .intro-secundario {
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 16px;
   color: #ccc;
   margin-bottom: 50px;
 }
@@ -238,12 +258,8 @@
 .servicio-destacado-con-imagen {
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  max-width: 900px;
+  border-radius: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -263,12 +279,12 @@
 
 .contenido-servicio {
   flex: 0 0 60%;
-  padding: 30px;
+  padding: 50px;
   text-align: left;
 }
 
 .contenido-servicio h3 {
-  font-size: 1.6rem;
+  font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #fff;
@@ -276,7 +292,7 @@
 }
 
 .contenido-servicio p {
-  font-size: 1rem;
+  font-size: 13px;
   line-height: 1.6;
   color: #ddd;
   margin-bottom: 25px;
@@ -288,7 +304,7 @@
   color: #d4af37;
   border: 1px solid #d4af37;
   padding: 12px 30px;
-  font-size: 1rem;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 2px;
@@ -306,39 +322,39 @@
   .titulo-eslogan h1 {
     font-size: 2.5rem;
   }
-  
+
   .titulo-eslogan .eslogan {
     font-size: 1.3rem;
   }
-  
+
   .carrusel {
     width: 65%;
   }
-  
+
   .servicio-card {
     max-width: 280px;
     min-height: 400px;
   }
-  
+
   .contenido-secundario h2 {
     font-size: 2.3rem;
   }
-  
+
   .intro-secundario {
     font-size: 1.2rem;
   }
-  
+
   .servicio-destacado-con-imagen {
     flex-direction: column;
     max-width: 600px;
   }
-  
+
   .imagen-servicio {
     flex: 0 0 100%;
     width: 100%;
     height: 220px;
   }
-  
+
   .contenido-servicio {
     flex: 0 0 100%;
     padding: 25px;
@@ -352,63 +368,63 @@
     min-height: 90vh;
     padding: 30px 15px;
   }
-  
+
   .titulo-eslogan {
     margin-bottom: 40px;
   }
-  
+
   .titulo-eslogan h1 {
     font-size: 2rem;
     letter-spacing: 2px;
   }
-  
+
   .titulo-eslogan .eslogan {
     font-size: 1.1rem;
   }
-  
+
   .carrusel {
     width: 75%;
   }
-  
+
   .nav-arrow {
     width: 35px;
     height: 35px;
   }
-  
+
   .servicio-card {
     max-width: 260px;
     min-height: 420px;
   }
-  
+
   .servicio-imagen {
     height: 150px;
   }
-  
+
   .servicio-contenido {
     padding: 15px;
   }
-  
+
   .contenido-secundario h2 {
     font-size: 2rem;
   }
-  
+
   .intro-secundario {
     font-size: 1.1rem;
     margin-bottom: 40px;
   }
-  
+
   .servicio-destacado-con-imagen {
     max-width: 500px;
   }
-  
+
   .contenido-servicio {
     padding: 20px;
   }
-  
+
   .contenido-servicio h3 {
     font-size: 1.4rem;
   }
-  
+
   .contenido-servicio p {
     font-size: 0.95rem;
   }
@@ -418,59 +434,59 @@
   .titulo-eslogan h1 {
     font-size: 1.8rem;
   }
-  
+
   .carrusel-container {
     flex-direction: column;
   }
-  
+
   .carrusel {
     width: 100%;
     margin: 15px 0;
     order: 2;
   }
-  
+
   .nav-arrow {
     position: static;
     margin: 8px;
   }
-  
+
   .nav-arrow.left-arrow {
     order: 1;
   }
-  
+
   .nav-arrow.right-arrow {
     order: 3;
   }
-  
+
   .servicio-card {
     max-width: 240px;
     min-height: 440px;
   }
-  
+
   .seccion-secundaria {
     padding: 60px 15px;
   }
-  
+
   .contenido-secundario h2 {
     font-size: 1.8rem;
   }
-  
+
   .intro-secundario {
     font-size: 1rem;
   }
-  
+
   .servicio-destacado-con-imagen {
     max-width: 100%;
   }
-  
+
   .imagen-servicio {
     height: 180px;
   }
-  
+
   .contenido-servicio {
     padding: 20px;
   }
-  
+
   .boton-minimalista {
     padding: 10px 25px;
     font-size: 0.9rem;

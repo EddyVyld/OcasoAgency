@@ -73,11 +73,19 @@ const EstudioDeProduccion = () => {
   ];
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === servicios.length - 1 ? 0 : prev + 1));
+    setCurrentSlide((prev) => {
+      const next = prev + 1;
+      // Si llegamos al final, volver al inicio (carrusel infinito)
+      return next >= servicios.length ? 0 : next;
+    });
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? servicios.length - 1 : prev - 1));
+    setCurrentSlide((prev) => {
+      const previo = prev - 1;
+      // Si estamos al inicio, ir al final (carrusel infinito)
+      return previo < 0 ? servicios.length - 1 : previo;
+    });
   };
 
   return (
@@ -145,7 +153,7 @@ const EstudioDeProduccion = () => {
         <div className="overlay-bn">
           <div className="contenido-secundario">
             <h2>¿QUÉ OFRECEMOS?</h2>
-            <p className="intro-secundario">Volviendo la publicidad.</p>
+            <p className="intro-secundario">Volviendo la publicidad en cine</p>
 
             <div className="servicio-destacado-con-imagen">
               <div className="imagen-servicio">
