@@ -7,6 +7,7 @@ import cinepolisLogo from './Marcas/LogoCinepolis.png';
 import cinemexLogo from './Marcas/Cinemex-Logo-2024.png';
 import corazonFilmsLogo from './/Marcas/corazon-films2.png';
 import WooFilmsLogo from './Marcas/WooFilmsLogo.png';
+import MandarinaCine from '../FilmsCartelera/logo-mandarina.png';
 
 export default function Clientes() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,7 +17,8 @@ export default function Clientes() {
     { id: 1, logo: cinepolisLogo },
     { id: 2, logo: cinemexLogo },
     { id: 3, logo: corazonFilmsLogo },
-    { id: 4, logo: WooFilmsLogo }
+    { id: 4, logo: WooFilmsLogo },
+    { id: 5, logo: MandarinaCine }
   ];
 
   // Carrusel automático

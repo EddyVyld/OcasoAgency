@@ -51,7 +51,6 @@ section {
 .titulo-eslogan h1 {
   font-size: 38px;
   text-transform: uppercase;
-
   margin-bottom: 15px;
   font-weight: bold;
   color: #fff;
@@ -86,6 +85,7 @@ section {
 .carrusel-inner {
   display: flex;
   transition: transform 0.4s ease;
+  width: 100%;
 }
 
 .servicio-card {
@@ -332,6 +332,7 @@ section {
   }
 
   .servicio-card {
+    flex: 0 0 70%;
     max-width: 280px;
     min-height: 400px;
   }
@@ -394,6 +395,8 @@ section {
   .servicio-card {
     max-width: 260px;
     min-height: 420px;
+    flex: 0 0 50%; /* Una tarjeta ocupa casi todo el ancho */
+    margin: 0px 10px;
   }
 
   .servicio-imagen {
