@@ -1,9 +1,15 @@
 import "./contactanos.css";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
+import fondoContactanos from "../assets/Contactanos.jpg";
+
 export default function Contactanos() {
   return (
-    <section id="seccion-contactanos" className="contact-container">
+    <section
+      id="seccion-contactanos"
+      className="contact-container"
+      style={{ backgroundImage: `url(${fondoContactanos})` }}
+    >
       <div className="contact-overlay">
         <div className="contact-content">
           {/* Izquierda */}

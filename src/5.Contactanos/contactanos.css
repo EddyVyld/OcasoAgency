@@ -1,6 +1,5 @@
 /*Fondo*/
 .contact-container {
-  background-image: url("src/assets/Contactanos.jpg"); /* Reemplaza por la imagen correcta */
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;

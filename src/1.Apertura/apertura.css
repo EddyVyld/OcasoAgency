@@ -40,7 +40,6 @@ h3 {
 
 /* ----- Imagen de fondo ----- */
 .apertura {
-  background-image: url("src/assets/Apertura.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;

@@ -111,7 +111,9 @@ const EstudioDeProduccion = () => {
                 <div className="carrusel">
                   <div
                     className="carrusel-inner"
-                    style={{ transform: `translateX(-${currentSlide * 320}px)` }}
+                    style={{
+                      transform: `translateX(-${currentSlide * 320}px)`,
+                    }}
                   >
                     {servicios.map((servicio) => (
                       <div key={servicio.id} className="servicio-card">

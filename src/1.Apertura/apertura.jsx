@@ -1,6 +1,8 @@
 import "./apertura.css";
 import React, { useState, useEffect, useRef } from "react";
 
+import fondoApertura from "../assets/Apertura.jpg";
+
 function Apertura() {
   const [menuActive, setMenuActive] = useState(false);
   const navRef = useRef(null);
@@ -47,7 +49,11 @@ function Apertura() {
   };
 
   return (
-    <header id="seccion-apertura" className="apertura">
+    <header
+      id="seccion-apertura"
+      className="apertura"
+      style={{ backgroundImage: `url(${fondoApertura})` }}
+    >
       <div className="overlay"></div>
       <nav>
         <div
